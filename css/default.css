@@ -2,3 +2,13 @@ body {
 	padding-top: 60px;
         padding-bottom: 40px;
 }
+
+.hero-unit {
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #FBFBFB 32%, #F1F1F1 81%, #F0F0F0 100%) repeat scroll 0 0 #F0F0F0;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 2px 2px 2px #EDEDED;
+    color: #333333;
+    display: inline-block;
+    text-shadow: 0 1px 0 #FFFFFF;
+}

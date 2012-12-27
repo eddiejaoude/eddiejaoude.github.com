@@ -8,9 +8,8 @@
     <meta name="author" content="Eddie Jaoude">
 
     <!-- styles -->
-    <link href="/twitter.boostrap/less/bootstrap.less" rel="stylesheet/less">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/default.css" rel="stylesheet">
-    <link href="/twitter.boostrap/less/bootstrap-responsive.less" rel="stylesheet/less">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -19,29 +18,43 @@
 
     <!-- fav and touch icons -->
     <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-
-    <!-- temp less js -->
-    <script src="/js/less-1.3.0.min.js"></script>
 </head>
 
 <body>
 
+
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
 
-	<div class="btn-group">
-          <a href="http://eddiejaoude.github.com/" class="btn btn-primary"><i class="icon-user icon-white"></i>Eddie Jaoude</a>
-          <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle"><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="http://www.linkedin.com/in/eddiejaoude"><i class="icon-user"></i>LinkedIn</a></li>
-            <li><a href="https://twitter.com/eddiejaoude"><i class="icon-comment"></i>Twitter</a></li>
-            <li><a href="https://github.com/eddiejaoude"><i class="icon-pencil"></i>Github</a></li>
-            <li class="divider"></li>
-            <li><a href="http://eddiejaoude.github.com/"><i class="i"></i>Home</a></li>
-          </ul>
-        </div>
-
+            <a class="brand" href="http://eddiejaoude.github.com">Eddie Abou-Jaoude</a>
+            <div class="nav-collapse collapse">
+            <ul class="nav">
+                <li class="active"><a href="/"><i class="icon-home"></i> Home</a></li>
+                <li><a href="http://www.linkedin.com/in/eddiejaoude"><i class="icon-user"></i> LinkedIn</a></li>
+                <li><a href="https://twitter.com/eddiejaoude"><i class="icon-comment"></i> Twitter</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="https://github.com/eddiejaoude">
+                        <i class="icon-pencil"></i>
+                        Github <b class="caret"></b>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://github.com/eddiejaoude">View more...</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Most popular...</li>
+                            <li><a href="https://github.com/eddiejaoude">ZF1 &amp; Doctrine2</a></li>
+                            <li><a href="https://github.com/eddiejaoude/zf-log-reader">ZF1 Log Reader</a></li>
+                            <li><a href="https://github.com/eddiejaoude/zf2">ZF2</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <!--<li><a href="/about.html"><i class="icon-globe"></i> About</a></li>-->
+            </ul>
+            </div>
 
         </div>
     </div>
@@ -51,19 +64,25 @@
 
     <!-- Main hero unit for a primary marketing message or call to action -->
     <div class="hero-unit">
-        <h1>Open Source</h1>
-        <h2>The road ahead</h2>
-        <p>Experienced Open Source web application developer - specialising in the LAMP stack with Zend Framework using TDD through to client-side with jQuery to W3C strict standards.</p>
-        <p><a class="btn btn-primary btn-large btn-inverse" href="https://github.com/eddiejaoude">Github projects</a></p>
+        <h1>Open Source <small>Is the road ahead</small></h1>
+        <p>Experienced Open Source web application developer - specialising in the LAMP stack with Zend Framework
+            using TDD through to client-side with jQuery & Twitter Bootstrap to W3C strict standards. With many of his
+            own projects &amp; contribution to others (inc. ZF1, ZF2, CakePHP Soap Source etc),
+            Eddie has learnt many best practices. With 5+ years experience specialising in SOA architecture &amp;
+            Design Patterns while achieving 100% code coverage with mocking unit tests to test boundary conditions.</p>
+        <p><a class="btn btn-primary btn-large btn-inverse popover-show" href="https://github.com/eddiejaoude"
+              data-title="Click to view GitHub profile." data-content="Note, this will leave this site.">
+            <i class="icon-pencil icon-white"></i> Github projects</a></p>
     </div>
 
     <!-- Example row of columns -->
     <div class="row">
         <div class="span4">
             <h2>LinkedIn</h2>
-            <p>Work history &amp; recommendation.</p>
+            <p>Work history &amp; recommendations.</p>
             <p>
-                <a class="btn" href="http://www.linkedin.com/in/eddiejaoude">
+                <a class="btn popover-show" href="http://www.linkedin.com/in/eddiejaoude"
+                   data-title="Click to view LinkedIn profile." data-content="Note, this will leave this site.">
                     <i class="icon-user"></i>
                     LinkedIn profile
                 </a>
@@ -73,7 +92,8 @@
             <h2>Twitter</h2>
             <p>Technology activity &amp; project releases.</p>
             <p>
-                <a class="btn" href="https://twitter.com/eddiejaoude">
+                <a class="btn popover-show" href="https://twitter.com/eddiejaoude"
+                   data-title="Click to view Twitter profile." data-content="Note, this will leave this site.">
                     <i class="icon-comment"></i>
                     Twitter profile
                 </a>
@@ -81,9 +101,10 @@
         </div>
         <div class="span4">
             <h2>Github</h2>
-            <p>Open source projects &amp; contributions.</p>
+            <p>Open source projects &amp; contributions on hobby projects.</p>
             <p>
-                <a class="btn" href="https://github.com/eddiejaoude">
+                <a class="btn popover-show" href="https://github.com/eddiejaoude"
+                   data-title="Click to view GitHub profile." data-content="Note, this will leave this site.">
                     <i class="icon-pencil"></i>
                     Github profile
                 </a>
@@ -94,7 +115,8 @@
     <hr>
 
     <footer>
-        <p>&copy; Jaoude Studios Ltd 2012</p>
+        <p>&copy; Jaoude Studios Ltd 2012
+            <span class="muted"> - Eddie Abou-Jaoude, Bsc, Msc - Guildford, UK</span></p>
     </footer>
 
 </div> <!-- /container -->
@@ -103,18 +125,8 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="/js/jquery.min.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-transition.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-alert.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-modal.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-dropdown.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-scrollspy.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-tab.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-tooltip.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-popover.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-button.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-collapse.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-carousel.js"></script>
-<script src="/twitter.boostrap/js/bootstrap-typeahead.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/default.js"></script>
 
 </body>
 </html>
