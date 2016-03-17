@@ -1,2 +1,4 @@
-.idea
-.DS_*
+.vagrant/
+_site
+.sass-cache
+.jekyll-metadata
