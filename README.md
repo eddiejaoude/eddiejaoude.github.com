@@ -1,5 +1,7 @@
 # Eddie Jaoude
 
+http://eddiejaoude.github.io
+
 ### Technologies
 
 * Twitter Bootstrap
