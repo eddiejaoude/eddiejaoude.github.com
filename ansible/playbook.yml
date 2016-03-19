@@ -1,0 +1,10 @@
+---
+- hosts: all
+  sudo: true
+  vars_files:
+    - vars/all.yml
+  roles:
+    - app
+    - ruby
+    - server
+    - vagrant_local

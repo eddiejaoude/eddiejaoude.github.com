@@ -1,0 +1,4 @@
+- name: jekyll
+  gem:
+    name: jekyll
+    user_install: no
