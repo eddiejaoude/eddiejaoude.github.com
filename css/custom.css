@@ -1,0 +1,31 @@
+.about {
+    margin-top: 2rem;
+}
+
+.card-footer a, .card-footer a:link, .card-footer a:active {
+    color: #fff;
+}
+
+.card-footer a:visited {
+    color: #f5f5f5;
+}
+
+.card-footer a:hover {
+    color: #999;
+}
+
+.card-footer {
+    background-color: #ccc;
+}
+
+.container-fluid {
+    margin-bottom: 5rem;
+}
+
+.post-list .card-block {
+    padding:0.25rem;
+}
+
+.post-list .card-block img {
+    margin-right:0.5rem;
+}
