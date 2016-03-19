@@ -3,23 +3,23 @@ layout: single
 ---
 
 <div class="post-list">
-{% for post in site.posts %}
+    {% for post in site.posts %}
 
-  <div class="card">
-    <div class="card-header">
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <div class="card">
+        <div class="card-header">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </div>
+        <div class="card-block">
+            <img src="{{ post.image_thumbnail }}" class="img-thumbnail pull-xs-left" />
+            <p>{{ post.overview }}</p>
+            <div class="clearfix"></div>
+        </div>
+        <div class="card-footer text-muted">
+            {{ post.date | date: "%b %-d, %Y" }} by {{ post.author }}
+        </div>
     </div>
-    <div class="card-block">
-      <img src="{{ post.image_thumbnail }}" class="img-thumbnail pull-xs-left" />
-      <p>{{ post.overview }}</p>
-      <div class="clearfix"></div>
-    </div>
-    <div class="card-footer text-muted">
-      {{ post.date | date: "%b %-d, %Y" }} by {{ post.author }}
-    </div>
-  </div>
 
-{% endfor %}
+    {% endfor %}
 </div>
 
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
