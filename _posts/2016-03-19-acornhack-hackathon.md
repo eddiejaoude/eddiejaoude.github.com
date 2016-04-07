@@ -5,7 +5,7 @@ date:   2016-03-19 00:00:00 +0000
 overview: 2-day hackathon to encourage entrepreneurship - where teenage girls will be inspired to get creative with coding, programming and digital technology, as well as attend masterclass workshops from digital marketing to APIs. The aim of this event is to give young women the basic tools that will enable them to make a more informed decisions.
 image_thumbnail: /img/2016-03-19/acornhack_thumbnail.png
 image_main: /img/2016-03-19/acornhack_main.png
-author: Eddie Jaoude
+author: Eddie Jaoude (Eddie Abou-Jaoude)
 ---
 
 #### Pre-event
