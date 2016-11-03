@@ -1,9 +1,0 @@
----
-server:
-    install: '1'
-    packages: [vim, htop, iotop]
-    timezone: UTC
-    locale: en_US.UTF-8
-vagrant_local:
-    install: '1'
-    vm: { base_box: trusty64, hostname: eddiejaoude, ip: 192.168.33.99, memory: '512', sharedfolder: ./, enableWindows: '1', useVagrantCloud: '1', syncType: nfs }
