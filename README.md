@@ -4,9 +4,8 @@
 
 ## Preview
 
-![desktop preview](https://user-images.githubusercontent.com/624760/47901935-16385600-de79-11e8-8462-df39b705e136.png)
+![Website Preview](https://user-images.githubusercontent.com/43912470/101490075-d9a88400-3987-11eb-8fa6-8726220b0982.png)
 
-![mobile preview](https://user-images.githubusercontent.com/624760/47902104-644d5980-de79-11e8-8948-720932ae32b8.png)
 
 **[View Live Preview](https://blackrockdigital.github.io/startbootstrap-resume/)**
 
