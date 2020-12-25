@@ -1,10 +1,20 @@
 {
   "data": [
     {
-      "name": "Joe"
+      "name": "Layale",
+      "twitter": "yalematta",
+      "photo": "https://pbs.twimg.com/profile_images/1339585242135318528/IPUAP6qh_400x400.jpg",
+      "location": "Lebanon",
+      "message": "Following @eddiejaoude videos helped me a lot. You'll learn by practicing during his livestreams. Check his YouTube channel!",
+      "featured": true
     },
     {
-      "name": "AAAA"
+      "name": "Nawal Alhamwi",
+      "twitter": "__nawalhmw",
+      "photo": "https://pbs.twimg.com/profile_images/1086037844165050370/J8kynhBi_400x400.jpg",
+      "location": "Saudi",
+      "message": "His videos (both the content && the way he delivers information) made me love Github more!🤩 Thanks @eddiejaoude 🌟",
+      "featured": false
     }
   ]
 }
