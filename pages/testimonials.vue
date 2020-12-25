@@ -2,15 +2,19 @@
   <div>
     <h2>Testimonials</h2>
     <ul>
-      <li v-for="testimonial in testimonials" v-bind:key="testimonial.name">{{ testimonial.name }}</li>
+      <li v-for="testimonial in testimonials.data" :key="testimonial.name">{{ testimonial.name }}</li>
     </ul>
   </div>
 </template>
 
 <script>
 export default {
-  data: () => ({
-    testimonials: [{ name: 'aaaaaa' }]
-  })
+  async asyncData ({ $content }) {
+    const testimonials = await $content('testimonials').fetch()
+
+    return {
+      testimonials
+    }
+  }
 }
 </script>
