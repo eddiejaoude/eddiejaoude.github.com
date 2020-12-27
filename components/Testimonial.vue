@@ -55,20 +55,24 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue, { PropType } from 'vue'
+
+export interface  ITestimonial {
+  name: String;
+  twitter: String;
+  photo: String;
+  location: String;
+  message: String;
+  featured: Boolean;
+}
+
+export default Vue.extend({
   props: {
     data: {
-      name: String,
-      twitter: String,
-      photo: String,
-      location: String,
-      message: String,
-      featured: {
-        type: Boolean,
-        default: false,
-      },
+      type: Object as PropType<ITestimonial>,
+      required: true
     }
   }
-}
+})
 </script>

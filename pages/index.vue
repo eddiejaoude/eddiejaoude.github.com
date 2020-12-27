@@ -14,11 +14,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { ITestimonial } from '../components/Testimonial.vue'
 
 export default Vue.extend({
   data() {
     return {
-      testimonials: {}
+      testimonials: { data: [] }
     }
   },
   async asyncData ({ $content }) {
@@ -29,8 +30,8 @@ export default Vue.extend({
     }
   },
   computed: {
-    featuredTestimonials: function() {
-      return this.testimonials.data.filter((testimonial) => testimonial.featured)
+    featuredTestimonials(): ITestimonial[] {
+      return this.testimonials.data.filter((testimonial: ITestimonial) => testimonial.featured)
     }
   }
 })

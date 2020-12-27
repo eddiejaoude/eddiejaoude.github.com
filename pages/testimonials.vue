@@ -11,8 +11,10 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
   async asyncData ({ $content }) {
     const testimonials = await $content('testimonials').fetch()
 
@@ -20,5 +22,5 @@ export default {
       testimonials
     }
   }
-}
+})
 </script>
